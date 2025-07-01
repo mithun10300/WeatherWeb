@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<head>
+    <title>☁️Weather Today</title>
+ 
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+    <link rel="stylesheet" href="weather.css">
+	</head>
+	
+	<body>
+		<video autoplay muted loop id="background">
+		<source src="C:\Users\mithu\OneDrive\Desktop\html\1893623-uhd_3840_2160_25fps.mp4" type="video/mp4">
+	    </video>
+	
+		<div class="container">
+			<h1>☁️Weather Today</h1>
+			<p>Check the weather in your city!</p>
+			<form id="weatherForm" onsubmit="getWeather(); return false;">
+				<input type="text" id="cityInput" placeholder="Enter city name" required>
+				<button type="submit">Get Weather</button>
+			</form>
+			<div id="weatherResult"></div>
+		</div>
+
+		<script src="design.js"></script>
+		
+</body>
+</html>
